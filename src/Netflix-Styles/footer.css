@@ -1,0 +1,51 @@
+.section-container {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+.section-container .section {
+  /* background-color: rgb(138, 137, 139); */
+  padding: 20px;
+  height: auto;
+}
+
+.section ul {
+  list-style: none;
+}
+.section ul li {
+  line-height: 42px;
+}
+.section a {
+  color: #d6d6d6c4;
+}
+
+.footer p {
+  color: #d6d6d6c4;
+}
+
+.netflix-ph {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 1881px) {
+  .section-container {
+    grid-template-columns: repeat(4, 350px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,167 @@
+/* Netflix Logo Styles */
+.netflix-logo {
+  letter-spacing: 4px;
+  color: #e50914;
+  font-size: 48px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Netflix Header Styles */
+.netflix-header {
+  position: relative;
+  background-image: linear-gradient(
+      rgb(0, 0, 0),
+      transparent 30%,
+      transparent 10%,
+      rgb(0, 0, 1)
+    ),
+    url(../img/header-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 71vh;
+  margin-bottom: 10px;
+}
+
+/* Netflix navigation bar Styles */
+.netflix-header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lang-sign {
+  display: flex;
+}
+
+.netflix-header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Netflix Select Language Styles */
+.language-label {
+  display: flex;
+
+  padding: 5px 8px;
+  background-color: transparent;
+  border: 1px solid #d6d6d654;
+  border-radius: 7px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.language-label i,
+select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.language-label select option {
+  color: rgb(0, 0, 0);
+}
+
+/* Netflix Sign In button */
+.sign-in-btn {
+  padding: 8px 15px;
+  border: none;
+  color: #fff;
+  background-color: #e50914;
+
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+/* Netflix Title Section */
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+.title-container h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .netflix-logo {
+    font-size: 27px;
+  }
+  .netflix-header nav {
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+  .title-section {
+    width: 100%;
+  }
+  .netflix-header section h1 {
+    font-size: 20px;
+  }
+  .netflix-header section h3 {
+    font-size: 14px;
+  }
+  .language-label {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .language-label select {
+    font-size: 13px;
+  }
+
+  .sign-in-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 424px) {
+  .netflix-header {
+    height: 65vh;
+  }
+  .netflix-logo {
+    font-size: 20px;
+  }
+  .language-label {
+    padding: 0 5px;
+    font-size: 13px;
+  }
+
+  .language-label select {
+    font-size: 0;
+  }
+
+  .sign-in-btn {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
+
+  .title-container {
+    top: 65%;
+  }
+
+  .netflix-header section h1 {
+    font-size: 22px;
+  }
+  .netflix-header section h3 {
+    font-size: 15px;
+  }
+}
